@@ -20,7 +20,9 @@ final class CryptoPresenter: CryptoViewOutput {
     }
     
     func viewDidLoad() {
+        input.fetchData()
         input.setupUI()
         input.setupTableView()
+        input.configureConstaints()
     }
 }

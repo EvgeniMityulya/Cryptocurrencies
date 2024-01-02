@@ -15,6 +15,11 @@
 		7B0980D52B44B6880043BB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0980D32B44B6880043BB1E /* LaunchScreen.storyboard */; };
 		7B0980DE2B44BAA10043BB1E /* CryptoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980DD2B44BAA10043BB1E /* CryptoPresenter.swift */; };
 		7B0980E02B44BAAA0043BB1E /* CryptoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980DF2B44BAAA0043BB1E /* CryptoBuilder.swift */; };
+		7B0980E72B44BDD30043BB1E /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980E62B44BDD30043BB1E /* UIColor + Extensions.swift */; };
+		7B0980EB2B44C0D30043BB1E /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980EA2B44C0D30043BB1E /* CryptoTableViewCell.swift */; };
+		7B0980EE2B44C8A10043BB1E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980ED2B44C8A10043BB1E /* NetworkManager.swift */; };
+		7B0980F12B44C8C20043BB1E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0980F02B44C8C20043BB1E /* Alamofire */; };
+		7B0980F32B44CBCD0043BB1E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0980F22B44CBCD0043BB1E /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,10 @@
 		7B0980D62B44B6880043BB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B0980DD2B44BAA10043BB1E /* CryptoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPresenter.swift; sourceTree = "<group>"; };
 		7B0980DF2B44BAAA0043BB1E /* CryptoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBuilder.swift; sourceTree = "<group>"; };
+		7B0980E62B44BDD30043BB1E /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		7B0980EA2B44C0D30043BB1E /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		7B0980ED2B44C8A10043BB1E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B0980F22B44CBCD0043BB1E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0980F12B44C8C20043BB1E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,7 @@
 		7B0980C72B44B6870043BB1E /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				7B0980E42B44BDAE0043BB1E /* Common */,
 				7B0980E12B44BC2D0043BB1E /* CryptoViewController */,
 				7B0980DC2B44BA620043BB1E /* Resources */,
 				7B0980D62B44B6880043BB1E /* Info.plist */,
@@ -82,6 +93,7 @@
 		7B0980E12B44BC2D0043BB1E /* CryptoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7B0980EC2B44C7410043BB1E /* NetworkManager */,
 				7B0980CC2B44B6870043BB1E /* CryptoViewController.swift */,
 				7B0980DD2B44BAA10043BB1E /* CryptoPresenter.swift */,
 				7B0980DF2B44BAAA0043BB1E /* CryptoBuilder.swift */,
@@ -93,8 +105,42 @@
 		7B0980E22B44BC420043BB1E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				7B0980EA2B44C0D30043BB1E /* CryptoTableViewCell.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		7B0980E32B44BD970043BB1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B0980F22B44CBCD0043BB1E /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B0980E42B44BDAE0043BB1E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7B0980E52B44BDB90043BB1E /* Extensions */,
+				7B0980E32B44BD970043BB1E /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7B0980E52B44BDB90043BB1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B0980E62B44BDD30043BB1E /* UIColor + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B0980EC2B44C7410043BB1E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				7B0980ED2B44C8A10043BB1E /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +159,9 @@
 			dependencies = (
 			);
 			name = Crypto;
+			packageProductDependencies = (
+				7B0980F02B44C8C20043BB1E /* Alamofire */,
+			);
 			productName = Crypto;
 			productReference = 7B0980C52B44B6870043BB1E /* Crypto.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +190,9 @@
 				Base,
 			);
 			mainGroup = 7B0980BC2B44B6870043BB1E;
+			packageReferences = (
+				7B0980EF2B44C8C10043BB1E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7B0980C62B44B6870043BB1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,11 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0980F32B44CBCD0043BB1E /* Coin.swift in Sources */,
 				7B0980CD2B44B6870043BB1E /* CryptoViewController.swift in Sources */,
 				7B0980DE2B44BAA10043BB1E /* CryptoPresenter.swift in Sources */,
 				7B0980C92B44B6870043BB1E /* AppDelegate.swift in Sources */,
+				7B0980E72B44BDD30043BB1E /* UIColor + Extensions.swift in Sources */,
+				7B0980EE2B44C8A10043BB1E /* NetworkManager.swift in Sources */,
 				7B0980E02B44BAAA0043BB1E /* CryptoBuilder.swift in Sources */,
 				7B0980CB2B44B6870043BB1E /* SceneDelegate.swift in Sources */,
+				7B0980EB2B44C0D30043BB1E /* CryptoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +449,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B0980EF2B44C8C10043BB1E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B0980F02B44C8C20043BB1E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B0980EF2B44C8C10043BB1E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B0980BD2B44B6870043BB1E /* Project object */;
 }
